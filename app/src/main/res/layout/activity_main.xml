@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/borda"
+                android:hint="Nome"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editLocal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/borda"
+                android:hint="Local"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/borda"
+                android:hint="Descrição"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/adicionarFoto"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:textSize="20dp"
+                android:background="@drawable/button"
+                android:text="Adicionar Foto"
+                android:onClick="selecionarFoto"/>
+
+            <ImageView
+                android:id="@+id/ImagemItem"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/Salvar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20dp"
+                android:text="Salvar"
+                android:background="@drawable/button"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/verPatrimonio"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textSize="20dp"
+                android:text="Visualizar Patrimônio"
+                android:background="@drawable/button"
+                android:layout_gravity="center_horizontal"
+               />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
