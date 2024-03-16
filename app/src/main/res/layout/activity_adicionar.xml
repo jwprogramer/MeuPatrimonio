@@ -14,14 +14,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBaseline_toTopOf="@+id/nomeObjeto"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        app:srcCompat="@drawable/ic_launcher_foreground">
     </ImageView>
 
     <Button
         android:id="@+id/adicionarImage"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="Selecionar Foto"
+        android:text="Abrir Câmera"
         android:textSize="20sp"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
